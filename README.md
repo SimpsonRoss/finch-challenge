@@ -12,7 +12,7 @@ It lets your user:
 ### Prerequisites
 
 - **Node.js** ≥ 18  
-- **npm** (or **yarn**)  
+- **npm** 
 - A **Finch Developer** sandbox account with a **Client ID** & **Client Secret**  
   - Sign up: https://dashboard.tryfinch.com/signup  
 
@@ -69,7 +69,7 @@ FINCH_CLIENT_SECRET=your-finch-client-secret
 
 - Company, Directory, Individual & Employment endpoints
 
-- - Graceful handling of missing endpoints (501) and null fields
+- Graceful handling of missing endpoints (501) and null fields
 
 - Simple, responsive UI with Tailwind CSS
 
