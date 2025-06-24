@@ -3,7 +3,7 @@
 A Next.js 13 application that demonstrates how to integrate [Finch Connect](https://tryfinch.com) in a sandbox environment.  
 It lets your user:
 
-1. Enter a **Customer ID** & **Company Name**  
+1. Enter a **Customer ID** & **Customer Name**  
 2. Click **Connect** to start the Finch Connect OAuth flow  
 3. View **Company**, **Directory**, **Individual** & **Employment** data  
 
@@ -42,9 +42,9 @@ FINCH_CLIENT_SECRET=your-finch-client-secret
 
 5. **Navigate to http://localhost:3000**
 
-6. **Fill in Customer ID & Company Name, click Connect**
+6. **Fill in Customer ID & Customer Name, click Connect**
     - For the sake of this example you can make up these credentials
-    - *Note: If the same customer ID and company name is used for a second time, you will instead see the rauthentication flow, instead of trying to form a new finch connection*
+    - *Note: If the same customer ID and customer name is used for a second time, you will instead see the rauthentication flow, instead of trying to form a new finch connection*
 
 7. **Authorize in the Finch sandbox**
     - You’ll be redirected back to `http://localhost:3000/dashboard` and able to browse your company & employees

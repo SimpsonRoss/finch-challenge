@@ -12,12 +12,14 @@ export default function ConnectPage() {
   const [loading, setLoading]           = useState(false);
   const [error, setError]               = useState<string | null>(null);
 
-  const hasHtmlTags = (s: string) => /[<>]/.test(s);
 
+  const hasHtmlTags = (s: string) => /[<>]/.test(s);
+  
   const nameError = customerName && hasHtmlTags(customerName)
     ? 'Company Name cannot include angle-brackets (< or >).'
     : null;
 
+  // boolean to be used for whether to render 'Connect to provider' button
   const canConnect =
     customerId.trim()    !== '' &&
     customerName.trim()  !== '' &&
@@ -60,12 +62,12 @@ export default function ConnectPage() {
           value={customerId}
           onChange={e => setCustomerId(e.target.value)}
           className="mt-1 block w-full border rounded p-2"
-          placeholder="e.g. acme-42"
+          placeholder="e.g. JL-4223"
         />
       </label>
 
       <label className="block mb-4">
-        <span className="block text-sm font-bold">Company Name</span>
+        <span className="block text-sm font-bold">Customer Name</span>
         <input
           type="text"
           value={customerName}
@@ -73,7 +75,7 @@ export default function ConnectPage() {
           className={`mt-1 block w-full border rounded p-2 ${
             nameError ? 'border-red-500' : ''
           }`}
-          placeholder="e.g. Acme Corporation"
+          placeholder="e.g. Jones Limited"
         />
       </label>
       {nameError && (
