@@ -43,9 +43,11 @@ FINCH_CLIENT_SECRET=your-finch-client-secret
 5. **Navigate to http://localhost:3000**
 
 6. **Fill in Customer ID & Company Name, click Connect**
+    - For the sake of this example you can make up these credentials
+    - *Note: If the same customer ID and company name is used for a second time, you will instead see the rauthentication flow, instead of trying to form a new finch connection*
 
 7. **Authorize in the Finch sandbox**
-    - You’ll be redirected back and able to browse your company & employees
+    - You’ll be redirected back to `http://localhost:3000/dashboard` and able to browse your company & employees
 
 --- 
 ### Scripts
