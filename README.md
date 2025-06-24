@@ -35,18 +35,19 @@ FINCH_CLIENT_ID=your-finch-client-id
 FINCH_CLIENT_SECRET=your-finch-client-secret
 ```
 
-*Note: NEXT_PUBLIC_FINCH_REDIRECT_URI must exactly match the redirect URI you’ve configured in your Finch Developer Dashboard*
+4. **Add your redirect URI via the Finch dashboard**
+    - *Note: NEXT_PUBLIC_FINCH_REDIRECT_URI must exactly match the redirect URI you’ve configured in your Finch Dashboard*
 
-4. **Run the development server**
+5. **Run the development server**
     - `npm run dev`
 
-5. **Navigate to http://localhost:3000**
+6. **Navigate to http://localhost:3000**
 
-6. **Fill in Customer ID & Customer Name, click Connect**
+7. **Fill in Customer ID & Customer Name, click Connect**
     - For the sake of this example you can make up these credentials
     - *Note: If the same customer ID and customer name is used for a second time, you will instead see the rauthentication flow, instead of trying to form a new finch connection*
 
-7. **Authorize in the Finch sandbox**
+8. **Authorize in the Finch sandbox**
     - You’ll be redirected back to `http://localhost:3000/dashboard` and able to browse your company & employees
 
 --- 
