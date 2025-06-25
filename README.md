@@ -1,6 +1,6 @@
 # Finch Connect Demo
 
-A Next.js 13 application that demonstrates how to integrate [Finch Connect](https://tryfinch.com) in a sandbox environment.  
+A Next.js application that demonstrates how to integrate [Finch Connect](https://tryfinch.com) in a sandbox environment.  
 It lets your user:
 
 1. Enter a **Customer ID** & **Customer Name**  
